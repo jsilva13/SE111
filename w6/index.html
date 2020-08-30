@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessica Silva">
+    <title>Week 6 | JavaScript Pay Calculator </title>
+</head>
+<body>
+    <script>
+        //gather user input for hourly pay rate and store
+        var pay = prompt("Enter your hourly pay:")
+
+        alert(`Your hourly pay is: ${pay}`)
+
+        //gather user input for hours worked and store
+        var hours = prompt("Enter number of hours worked in one week: ")
+
+        alert(`You worked ${hours} hours in one week`)
+
+        var taxRate = .20
+
+        taxRate = Number(taxRate)
+        pay = Number(pay)
+        hours = Number(hours)
+
+        var grosspay = pay * hours * 2
+        var tax = grosspay * taxRate
+        var netpay = grosspay - tax
+        alert(`Gross Pay: $ ${grosspay.toFixed(2)} \nUncle Sam's Share: $ ${tax.toFixed(2)} \nNet Pay: $ ${netpay.toFixed(2)}`)
+        console.log(`Gross Pay: $ ${grosspay.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: $ ${tax.toFixed(2)}`)
+        console.log(`Net Pay: $ ${netpay.toFixed(2)}`)
+       
+
+
+
+
+
+
+    </script>
+</body>
+</html>
